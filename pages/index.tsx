@@ -1,18 +1,20 @@
+import { ClientRequest } from 'http'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import SideBar from '../components/sidebar'
+import Center from '../components/center'
 
 const Home: NextPage = () => {
   return (
-    <div className="">
-      <Head>
+    <div className='bg-black h-screen overflow-hidden'>
+      {/* <Head>
         <title>Spotify</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className='bg-black h-screen overflow-hidden'>
+      </Head> */}
+      <main className="flex">
         <SideBar />
-        {/* center */}
+        <Center />
       </main>
       <div>
     {/* Player */}
